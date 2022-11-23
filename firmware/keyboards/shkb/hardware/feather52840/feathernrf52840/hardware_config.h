@@ -23,16 +23,16 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 /* HARDWARE DEFINITION*/
 /* key matrix size */
-#define MATRIX_ROWS 1
-#define MATRIX_COLS 21
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 8
 
-  #define MATRIX_ROW_PINS { 33 } // 33 is a not connected pin
-  #define MATRIX_COL_PINS { 14, 15, 16, 17, 18, 19, 26, 25, 24, 1, 0, 2, 22, 23, 5, 6, 9, 10, 11, 12, 13 }
+  #define MATRIX_ROW_PINS { 9, 2, 4, 6, 12 }
+  #define MATRIX_COL_PINS { 13, 15, 17, 20, 22, 24, 0, 23 }
 
 #define UNUSED_PINS {}
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-    
+
 #endif /* HARDWARE_CONFIG_H */
