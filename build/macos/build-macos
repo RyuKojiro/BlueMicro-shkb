@@ -25,7 +25,7 @@ nrf52PackagePath="$arduinoDataPath/packages/adafruit/hardware/nrf52"
 
 scriptPath="$(dirname "$BASH_SOURCE")"
 
-blueMicroPath=$(cd $scriptPath/../.. && pwd)
+blueMicroPath="$(pwd)/../.."
 firmwarePath="${blueMicroPath}/firmware"
 outputPath="${blueMicroPath}/output"
 outputTempPath="/tmp"
@@ -237,7 +237,7 @@ printf -- "-----------------------------------------------------\n"
 
 rm -rf $sourcePath
 mkdir -p $sourcePath
-cp -r $firmwarePath/* $sourcePath
+cp -r $firmwarePath $sourcePath/
 
 for keyboard in $sourcePath/keyboards/*/
 do
